@@ -1,0 +1,20 @@
+.hw-blog {
+  width: 810px;
+  height: 437px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+
+  background: #D9D9D9;
+
+  &_item {
+    width: 759px;
+    height: 70px;
+
+    background: #F9D7D7;
+  }
+}
+
