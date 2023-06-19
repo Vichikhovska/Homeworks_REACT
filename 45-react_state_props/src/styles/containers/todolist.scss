@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  position: relative;
+  top: 150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &_input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  ::placeholder { padding-left: 8px;}
+
+  &_button {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    letter-spacing: 7px;
+    color: rgb(109, 107, 107);
+    background: white;
+  }
+
+  &_button:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(65, 109, 126);
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &_item {
+      display: flex;
+      gap: 8px;
+
+      &_checkbox {
+        width: 15px;
+        height: 15px;
+      }
+
+      &_text {
+        font-family: "Overpass", sans-serif;
+        font-size: 15px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &_counting {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+}
