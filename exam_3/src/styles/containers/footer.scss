@@ -1,0 +1,62 @@
+.mrvl-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 50px;
+  background: var(--base-color-dark);
+
+  &_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+
+      &_content {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 15px;
+        transition: all 1s;
+        color: var(--base-color-light);
+
+        &:hover {color: var(--red-color-100);}
+      }
+    }
+  }
+
+  &_different {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+    border-top: 1px solid var(--base-color-light);
+    border-bottom: 1px solid var(--base-color-light);
+
+    &_text {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      transition: all 1s;
+      color: var(--base-color-light);
+
+      &:hover {color: var(--red-color-100);}
+    }
+  }
+
+  .span {@extend .mrvl-footer_different_text;}
+}

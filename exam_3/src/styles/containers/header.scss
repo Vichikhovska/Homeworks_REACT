@@ -1,0 +1,56 @@
+.mrvl-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 50px;
+
+  background: var(--base-color-dark);
+
+  &_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    &_icons{
+      display: flex;
+      gap: 30px;
+      flex: 0 0 25px;
+
+      svg {
+        color: var(--base-color-light);
+        width: 25px;
+        height: 25px;
+        transition: all 1s;
+      }
+
+      svg:hover {color: var(--red-color-100);}
+    }
+  }
+
+  &_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 15px 0;
+
+    border-top: 1px solid var(--base-color-light);
+    border-bottom: 1px solid var(--base-color-light);
+
+    &_text {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 15px;
+      text-transform: uppercase;
+      transition: all 1s;
+
+      color: var(--base-color-light);
+    }
+
+    &_text:hover{color: var(--red-color-100);}
+  }
+}
