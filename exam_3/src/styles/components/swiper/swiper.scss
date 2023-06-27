@@ -1,0 +1,67 @@
+.swiper {
+  display: flex;
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.swiper-slide { margin: 0;}
+
+.slide {
+  display: flex;
+  align-items: flex-end;
+  width: 1440px;
+  height: 500px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+
+    width: 50%;
+    height: 500px;
+    padding: 50px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../assets/img/cosmos.jpg);
+
+    &_title {
+      font-family: var(--font-family);
+      font-size: 50px;
+      
+      color: var(--base-color-light);
+    }
+
+    &_text {
+      font-family: var(--font-family);
+      font-size: 24px;
+      line-height: 1.5;
+
+      color: var(--base-color-light);
+    }
+  }
+
+  &-image {
+    width: 50%;
+    max-width: 720px;
+    height: 500px;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: 1px solid var(--base-color-light) !important;
+  background-color: transparent !important;
+  margin: 0 15px !important;
+}
+
+.swiper-pagination-bullet-active {background-color: var(--base-color-light) !important;}
+

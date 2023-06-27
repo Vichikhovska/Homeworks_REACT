@@ -7,9 +7,9 @@ import { FOOTER_ABOUT_COMPANIES_LINKS } from "./constants";
 import { FOOTER_SOCIAL_MEDIA_LINKS } from "./constants";
 import { FOOTER_DIFFERENT_LINKS } from "./constants";
 
-
 //styles
 import "../../styles/containers/footer.scss";
+
 
 function Footer() {
   return (

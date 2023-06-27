@@ -4,9 +4,11 @@ import { Routes, Route } from "react-router-dom";
 //loyouts
 import PrimaryLayout from "../layouts/PrimaryLayout";
 import SecondaryLayout from "../layouts/SecondaryLayout";
+import SimpleLayout from "../layouts/SipmleLayout";
 
 //pages
 import HomePage from "./HomePage";
+import Authorization from "./Authorization";
 import Characters from "./Characters";
 import SingleCharacter from "./SingleCharacter";
 import Comics from "./Comics";
@@ -25,6 +27,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={renderLayout(HomePage)} />
+      <Route path="/authorization" element={renderLayout( Authorization, SimpleLayout)} />
       <Route path="/characters" element={renderLayout(Characters)} />
       <Route path="/characters/{characterId}" element={renderLayout(SingleCharacter)} />
       <Route path="/comics" element={renderLayout(Comics)} />

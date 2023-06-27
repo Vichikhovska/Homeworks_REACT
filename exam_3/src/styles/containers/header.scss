@@ -1,8 +1,12 @@
 .mrvl-header {
+  width: 100%;
+  max-width: 1440px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px 50px;
+  margin: 0 auto;
 
   background: var(--base-color-dark);
 
@@ -15,6 +19,7 @@
 
     &_icons{
       display: flex;
+      align-items: center;
       gap: 30px;
       flex: 0 0 25px;
 

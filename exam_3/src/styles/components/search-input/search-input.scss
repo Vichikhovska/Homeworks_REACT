@@ -1,0 +1,27 @@
+.custom-input {position: relative;}
+
+.custom-input input[type="text"] {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  transition: width 0.3s ease-in-out;
+
+  background-color: transparent;
+  color: var(--base-color-light);
+}
+
+.custom-input.open input[type="text"] {width: 250px;}
+
+.custom-input_icon {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.custom-input input[type="text"] {
+  border-radius: 20px;
+  border: 1px solid var(--base-color-light); 
+}

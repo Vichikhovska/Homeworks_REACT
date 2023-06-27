@@ -1,8 +1,13 @@
 .mrvl-footer {
+  width: 100%;
+  max-width: 1440px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px 50px;
+  margin: 0 auto;
+
   background: var(--base-color-dark);
 
   &_section {
@@ -21,6 +26,9 @@
       margin-bottom: 10px;
 
       &_content {
+        display: flex;
+        gap: 8px;
+        
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 500;
@@ -28,6 +36,7 @@
         text-transform: uppercase;
         line-height: 15px;
         transition: all 1s;
+
         color: var(--base-color-light);
 
         &:hover {color: var(--red-color-100);}

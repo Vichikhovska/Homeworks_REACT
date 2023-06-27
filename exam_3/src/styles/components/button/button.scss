@@ -1,0 +1,23 @@
+button {
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-family);
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--base-color-light);
+  transition: all 1s;
+
+  border: 1px solid var(--base-color-light);
+  background-color: transparent;
+}
+
+button:hover {
+  border: 1px solid var(--base-color-grey);
+  background-color: var(--red-color-100);
+  font-size: 20px;
+}

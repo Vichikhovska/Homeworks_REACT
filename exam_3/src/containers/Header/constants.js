@@ -1,4 +1,4 @@
-import { BiUser, BiSearch, BiHeart } from "react-icons/bi";
+import { BiUser, BiHeart } from "react-icons/bi";
 
 export const HEADER_NAVIGATION_LINKS = [
   { label: "HOME", value: "/" },
@@ -8,7 +8,6 @@ export const HEADER_NAVIGATION_LINKS = [
 ];
 
 export const HEADER_NAVIGATION_ICONS = [
-  { label: "Search", value: "/search", icon: <BiSearch /> },
-  { label: "Authorization", value: "/login", icon: <BiUser /> },
+  { label: "Authorization", value: "/authorization", icon: <BiUser /> },
   { label: "Favorites", value: "/favorites", icon: <BiHeart /> },
 ];

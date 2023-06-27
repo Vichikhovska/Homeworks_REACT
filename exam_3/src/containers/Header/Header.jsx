@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//components
+import SearchInput from "../../components/SearchInput";
+
 //helpers
 import { HEADER_NAVIGATION_LINKS } from "./constants";
 import { HEADER_NAVIGATION_ICONS } from "./constants";
@@ -19,6 +22,7 @@ function Header() {
         </svg>
       </Link>
       <div className="mrvl-header_logo_icons">
+        <SearchInput />
         {HEADER_NAVIGATION_ICONS.map((link, index) => (
           <Link key={`${index}-${link.label}`} to={link.value}>
             {link.icon}
