@@ -1,13 +1,11 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Spin } from "antd";
-import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
-
-// api
-import GetCharacterById from "../../../api/Single-Character";
 
 // styles
 import "../../../styles/pages/single-character.scss";
+
 
 function SingleCharacter() {
   const { id } = useParams();
@@ -19,8 +17,10 @@ function SingleCharacter() {
 
     const fetchData = async () => {
       try {
-        const response = await GetCharacterById(id);
-        setCharacter(response.data.results[0]);
+        const response = await axios.get(
+          `https://gateway.marvel.com:443/v1/public/characters/${id}?apikey=12bf5c0e3cdbe9b2e2dc09876922a9c0`
+        );
+        setCharacter(response.data.data.results[0]);
         setLoading(false);
       } catch (error) {
         console.error(error);
@@ -39,29 +39,25 @@ function SingleCharacter() {
     return <div>Character not found.</div>;
   }
 
-  const { name, image, description, comics } = character;
+  const { name, thumbnail, description, comics } = character;
 
   return (
-    <div className="single-character-page">
-      <div className="single-character-page__image">
-        <img src={`${image.path}.${image.extension}`} alt={name} />
+    <div className="mrvl-single-character-page">
+      <div className="mrvl-single-character-page__image">
+        <img src={`${thumbnail.path}.${thumbnail.extension}`} alt={name} />
       </div>
-      <div className="single-character-page__content">
-        <h2>{name}</h2>
-        <p>{description || "No description available."}</p>
-        <h3>Comics:</h3>
-        <ul>
+      <div className="mrvl-single-character-page__content">
+        <h2 className="mrvl-single-character-page__content_title">{name}</h2>
+        <p className="mrvl-single-character-page__content_text">{description || "No description available."}</p>
+        <h3 className="mrvl-single-character-page__content_subtitle">Comics:</h3>
+        <ul className="mrvl-single-character-page__content_list">
           {comics.items.map((comic) => (
-            <li key={comic.id}>{comic.name}</li>
+            <li className="mrvl-single-character-page__content_list_item" key={comic.resourceURI}>{comic.name}</li>
           ))}
         </ul>
       </div>
     </div>
   );
 }
-
-SingleCharacter.propTypes = {
-  id: PropTypes.string,
-};
 
 export default SingleCharacter;
