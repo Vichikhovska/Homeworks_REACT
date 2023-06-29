@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 
 // api
-import GetCharacterById from "../../api/Single-Character";
+import GetCharacterById from "../../../api/Single-Character";
 
 // styles
-import "../../styles/pages/single-character.scss";
+import "../../../styles/pages/single-character.scss";
 
 function SingleCharacter() {
   const { id } = useParams();
@@ -19,7 +19,7 @@ function SingleCharacter() {
 
     const fetchData = async () => {
       try {
-        const response = await GetCharacterById.get(id);
+        const response = await GetCharacterById(id);
         setCharacter(response.data.results[0]);
         setLoading(false);
       } catch (error) {
@@ -61,7 +61,7 @@ function SingleCharacter() {
 }
 
 SingleCharacter.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 };
 
 export default SingleCharacter;

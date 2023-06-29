@@ -9,8 +9,8 @@ import SimpleLayout from "../layouts/SipmleLayout";
 //pages
 import HomePage from "./HomePage";
 import Authorization from "./Authorization";
-import Characters from "./All-Characters";
-import CharacterCard from "./CharacterCard";
+import Characters from "./characters/All-Characters";
+import SingleCharacter from "./characters/Single-Character";
 import Comics from "./Comics";
 import Movies from "./Movies";
 
@@ -29,7 +29,7 @@ function Router() {
       <Route path="/" element={renderLayout(HomePage)} />
       <Route path="/authorization" element={renderLayout( Authorization, SimpleLayout)} />
       <Route path="/characters" element={renderLayout(Characters)} />
-      <Route path="/characters/:id" element={renderLayout(CharacterCard, SimpleLayout)} />
+      <Route path="/characters/:id" element={renderLayout(SingleCharacter, SimpleLayout)} />
       <Route path="/comics" element={renderLayout(Comics)} />
       <Route path="/movies" element={renderLayout(Movies, SecondaryLayout)} />
     </Routes>

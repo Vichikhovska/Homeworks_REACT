@@ -3,16 +3,13 @@ import { Spin } from "antd";
 import PropTypes from "prop-types";
 
 //api
-import GetAllCharacters from "../../api/All-Characters";
-
-//containers
-import CharacterCard from "../../pages/CharacterCard/CharacterCard";
+import GetAllCharacters from "../../../api/All-Characters";
 
 //pages
-// import SingleCharacter from "../Single-Character/Single-Character";
+import CharacterCard from "../CharacterCard/CharacterCard";
 
 //styles
-import "../../styles/pages/all-characters.scss"
+import "../../../styles/pages/all-characters.scss";
 
 
 function AllCharacters () {
@@ -68,9 +65,9 @@ function AllCharacters () {
 AllCharacters.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      id: PropTypes.number,
+      name: PropTypes.string,
+      image: PropTypes.string,
     })
   ),
   loading: PropTypes.bool,
