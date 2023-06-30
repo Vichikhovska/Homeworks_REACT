@@ -1,0 +1,51 @@
+.mrvl-single-comics-page {
+  width: 100%;
+  max-width: 1200px;
+  height: max-content;
+  margin: 0 auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  &__image {
+    width: 600px;
+
+    img {
+      padding: 10px;
+      width: 600px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 300;
+
+    &_title {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    &_text{
+      font-size: 20px;
+    }
+
+    &_subtitle {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    &_list {
+
+      &_item {
+        list-style: inside;
+      }
+    }
+  }
+}

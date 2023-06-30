@@ -1,0 +1,21 @@
+.mrvl-section-all-series {
+  width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &_loader {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--base-color-light);
+  }
+
+  &_ondisplay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 50px;
+  }
+}

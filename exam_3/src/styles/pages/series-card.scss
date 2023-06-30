@@ -1,0 +1,45 @@
+.mrvl-series-card {
+  width: 600px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  border: 1px solid var(--base-color-light);
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      padding: 3px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 700;
+
+    width: 96%;
+    margin: 10px;
+    padding: 20px;
+    
+    transition: all 2s;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--base-color-dark);
+  }
+
+  &__content:hover{color: var(--red-color-100);}
+
+}

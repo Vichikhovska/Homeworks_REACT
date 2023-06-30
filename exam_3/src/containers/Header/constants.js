@@ -4,7 +4,7 @@ export const HEADER_NAVIGATION_LINKS = [
   { label: "HOME", value: "/" },
   { label: "CHARACTERS", value: "/characters" },
   { label: "COMICS", value: "/comics" },
-  { label: "MOVIE", value: "/movies" },
+  { label: "SERIES", value: "/series" },
 ];
 
 export const HEADER_NAVIGATION_ICONS = [

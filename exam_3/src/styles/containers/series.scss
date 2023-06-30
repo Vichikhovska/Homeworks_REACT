@@ -1,4 +1,4 @@
-.mrvl-section-movies {
+.mrvl-section-series {
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
@@ -48,7 +48,7 @@
     }
 
     &_description {
-      @extend .mrvl-section-movies_parent_info;
+      @extend .mrvl-section-series_parent_info;
       align-items: center;
     }
   }

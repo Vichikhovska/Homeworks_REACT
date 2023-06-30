@@ -9,10 +9,12 @@ import SimpleLayout from "../layouts/SipmleLayout";
 //pages
 import HomePage from "./HomePage";
 import Authorization from "./Authorization";
-import Characters from "./characters/All-Characters";
+import AllCharacters from "./characters/All-Characters";
 import SingleCharacter from "./characters/Single-Character";
-import Comics from "./Comics";
-import Movies from "./Movies";
+import AllComics from "./comics/All-Comics";
+import SingleComics from "./comics/Single-Comics";
+import AllSeries from "./series/All-Series";
+import SingleSerie from "./series/Single-Serie";
 
 
 const renderLayout = (Component, Layout = PrimaryLayout) => {
@@ -28,10 +30,12 @@ function Router() {
     <Routes>
       <Route path="/" element={renderLayout(HomePage)} />
       <Route path="/authorization" element={renderLayout( Authorization, SimpleLayout)} />
-      <Route path="/characters" element={renderLayout(Characters)} />
+      <Route path="/characters" element={renderLayout(AllCharacters)} />
       <Route path="/characters/:id" element={renderLayout(SingleCharacter, SimpleLayout)} />
-      <Route path="/comics" element={renderLayout(Comics)} />
-      <Route path="/movies" element={renderLayout(Movies, SecondaryLayout)} />
+      <Route path="/comics" element={renderLayout(AllComics)} />
+      <Route path="/comics/:id" element={renderLayout(SingleComics, SimpleLayout)} />
+      <Route path="/series" element={renderLayout(AllSeries, SecondaryLayout)} />
+      <Route path="/series/:id" element={renderLayout(SingleSerie, SecondaryLayout)} />
     </Routes>
   );
 }
