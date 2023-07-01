@@ -24,7 +24,7 @@ function Characters () {
           <p className="mrvl-section-characters_parent_description_text">
             Whether you're a fan of Iron Man's genius intellect, Captain America's unwavering courage, or the cosmic adventures of the Guardians of the Galaxy, there's a Marvel character for everyone. Join the Marvel universe and embark on an epic journey filled with action, drama, and unforgettable characters.
           </p>
-          <Button text="Characters" onClick={handleButtonClick} />
+          <Button  className="mrvl-main-button" text="Characters" onClick={handleButtonClick} />
         </div>
       </div>
     </section>

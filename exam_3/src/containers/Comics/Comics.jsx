@@ -24,7 +24,7 @@ function Comics () {
           <p className="mrvl-section-comics_parent_description_text">
             From iconic characters like Superman, Batman, and Wonder Woman in DC Comics to the legendary heroes of Marvel Comics, such as Spider-Man, Hulk, and the X-Men, comics have created a rich tapestry of unforgettable characters and stories. Dive into the pages of comics and let your imagination soar alongside these larger-than-life heroes.
           </p>
-          <Button text="Comics" onClick={handleButtonClick} />
+          <Button  className="mrvl-main-button" text="Comics" onClick={handleButtonClick} />
         </div>
       </div>
     </section>

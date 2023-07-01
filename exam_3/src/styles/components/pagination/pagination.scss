@@ -1,0 +1,17 @@
+.mrvl-pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px;
+
+  &_current-page,
+  &_between,
+  &_total-pages {
+    font-family: var(--font-family);
+    font-size: 14px;
+
+    color: var(--base-color-light);
+  }
+}

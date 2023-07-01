@@ -24,7 +24,7 @@ function Series () {
           <p className="mrvl-section-series_parent_description_text">
             From the thrilling adventures of Iron Man to the cosmic battles of the Guardians of the Galaxy, each Marvel movie has offered audiences a unique and immersive experience. Join the excitement and witness the magic of movies as Marvel brings its iconic characters to life on the big screen.
           </p>
-          <Button text="Series" onClick={handleButtonClick} />
+          <Button  className="mrvl-main-button" text="Series" onClick={handleButtonClick} />
         </div>
       </div>
     </section>

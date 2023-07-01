@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Spin, Button } from "antd";
+import { Spin } from "antd";
 import PropTypes from "prop-types";
 
 //api
@@ -7,6 +7,9 @@ import GetAllCharacters from "../../../api/All-Characters";
 
 //pages
 import CharacterCard from "../CharacterCard/CharacterCard";
+
+//components
+import Pagination from "../../../components/Pagination";
 
 //styles
 import "../../../styles/pages/all-characters.scss";
@@ -49,31 +52,37 @@ function AllCharacters() {
     setCurrentPage(currentPage - 1);
   };
 
+  const TOTAL_PAGES = Math.ceil(characters.length / PAGE_SIZE);
+
   return (
     <section className="mrvl-section-all-characters">
       {
         loading 
-        ? (<div className="mrvl-section-all-characters_loader">
+        ? (
+          <div className="mrvl-section-all-characters_loader">
             <Spin />
             Loading...
-          </div>) 
-        : ( <div className="mrvl-section-all-characters_ondisplay">
+          </div>
+          ) 
+        : (
+          <div className="mrvl-section-all-characters_ondisplay">
             {characters.map((character) => (
-            <CharacterCard
-              key={character.id}
-              characterId={character.id}
-              name={character.name}
-              image={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-            />
-          ))}
-        </div>)
+              <CharacterCard
+                key={character.id}
+                characterId={character.id}
+                name={character.name}
+                image={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+              />
+            ))}
+          </div>
+        )
       }
-      <div className="mrvl-section-all-characters_pagination">
-        <Button onClick={goToPreviousPage} disabled={currentPage === 1}>
-          Previous
-        </Button>
-        <Button onClick={goToNextPage}>Next</Button>
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={TOTAL_PAGES}
+        goToPreviousPage={goToPreviousPage}
+        goToNextPage={goToNextPage}
+      />
     </section>
   );
 }

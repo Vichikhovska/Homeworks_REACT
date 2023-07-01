@@ -6,6 +6,7 @@ import Button from "../../Button/Button";
 //styles
 import "../../../styles/components/form/sing-up.scss";
 
+
 function SignupForm () {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -73,7 +74,7 @@ function SignupForm () {
         required
       />
       {errorMessage && <p className="error">{errorMessage}</p>}
-      <Button type="submit" text="Sign Up" />
+      <Button  className="mrvl-main-button" type="submit" text="Sign Up" />
     </form>
   );
 };

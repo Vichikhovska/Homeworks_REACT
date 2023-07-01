@@ -6,6 +6,7 @@ import Button from "../../Button/Button";
 //styles
 import "../../../styles/components/form/log-in.scss";
 
+
 function LoginForm () {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -55,7 +56,7 @@ function LoginForm () {
         required
       />
       {errorMessage && <p className="error">{errorMessage}</p>}
-      <Button text="Log In" type="submit"/>
+      <Button  className="mrvl-main-button" text="Log In" type="submit"/>
     </form>
   );
 };
