@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 //components
 import Button from "../../components/Button/Button";
@@ -7,9 +8,11 @@ import Button from "../../components/Button/Button";
 import "../../styles/containers/characters.scss";
 
 function Characters () {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
-    window.location.href = "/characters";
-  };
+    navigate("/characters");
+  }; 
 
   return (
     <section className="mrvl-section-characters">

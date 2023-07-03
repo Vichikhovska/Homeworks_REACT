@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 //components
 import Button from "../../components/Button/Button";
@@ -6,10 +7,13 @@ import Button from "../../components/Button/Button";
 //styles
 import "../../styles/containers/comics.scss";
 
+
 function Comics () {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
-    window.location.href = "/comics";
-  };
+    navigate("/comics");
+  }; 
 
   return (
     <section className="mrvl-section-comics">

@@ -1,6 +1,7 @@
 import React from "react";
 import MapComponent from "../../components/Map/M-map";
 
+
 function SectionMap() {
   return (
     <section className="mrvl_map">

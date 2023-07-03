@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 //components
 import Button from "../../Button/Button";
@@ -13,8 +14,11 @@ function SignupForm () {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const navigate = useNavigate(); 
+
   const handleSignup = (event) => {
     event.preventDefault();
+    navigate("/authorization");
 
     if (username.length < 3 || username.length > 30) {
       setErrorMessage("Enter a username between 3 to 30 characters");
@@ -42,8 +46,6 @@ function SignupForm () {
     setErrorMessage("");
 
     alert("Ви успішно зареєструвались. Перейдіть до форми Log In.");
-    window.location.href = "/authorization";
-
   };
 
   return (

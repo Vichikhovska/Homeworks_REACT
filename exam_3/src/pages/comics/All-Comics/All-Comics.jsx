@@ -28,9 +28,10 @@ function AllComics() {
       try {
         const timestamp = Date.now().toString();
         const offset = (currentPage - 1) * PAGE_SIZE;
+        const REACT_APP_API_PUBLIC_KEY = "12bf5c0e3cdbe9b2e2dc09876922a9c0";
 
         const response = await GetAllComics.get(
-          `ts=${timestamp}&apikey=12bf5c0e3cdbe9b2e2dc09876922a9c0&offset=${offset}&limit=${PAGE_SIZE}`
+          `ts=${timestamp}&apikey=${REACT_APP_API_PUBLIC_KEY}&offset=${offset}&limit=${PAGE_SIZE}`
         );
 
         setComics(response.data.results);

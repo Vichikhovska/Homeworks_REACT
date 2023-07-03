@@ -7,6 +7,7 @@ import SignupForm from "../../components/Form/SingUp/SingUp.jsx";
 //styles
 import "../../styles/components/form/authorization.scss";
 
+
 function Forms () {
   return (
     <div className="mrvl-forms">

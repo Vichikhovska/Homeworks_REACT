@@ -15,6 +15,7 @@ import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
+
 SwiperCore.use([Autoplay, Pagination]);
 
 const handleClick = () => {
@@ -28,7 +29,9 @@ function SwiperComponent() {
       pagination={{ clickable: true }}
       slidesPerView={1}
       spaceBetween={10}
+      loop={true}
       autoplay={{ delay: 3000 }}
+      speed={2000}
     >
       <SwiperSlide>
         <div className="slide">
@@ -115,3 +118,52 @@ function SwiperComponent() {
 };
 
 export default SwiperComponent;
+
+
+// import React from "react";
+// // import Button from "../Button/Button";
+// import { Link } from "react-router-dom";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import SwiperCore, { Pagination, Autoplay } from "swiper";
+// import images from "./constants";
+// import MySwiperSlide from "../SwiperSlide";
+// import "../../styles/components/swiper/swiper.scss";
+// import "../../styles/components/button/button.scss";
+// import "swiper/css";
+// import "swiper/scss/navigation";
+// import "swiper/scss/pagination";
+
+// SwiperCore.use([Autoplay, Pagination]);
+
+// function SwiperComponent() {
+//   const slides = [
+//     {
+//       title: "Why Groot's Line at the End of 'Guardians of the Galaxy Vol. 3' Matters",
+//       text: "And more importantly, why could we understand it?",
+//       image: images.groot,
+//       link: "/series",
+//     },
+//     // Додайте решту слайдів за аналогією з першим
+//   ];
+
+//   return (
+//     <Swiper
+//       modules={[Pagination, Autoplay]}
+//       pagination={{ clickable: true }}
+//       slidesPerView={1}
+//       spaceBetween={10}
+//       autoplay={{ delay: 3000 }}
+//     >
+//       {slides.map((slide, id) => (
+//         <MySwiperSlide key={""}>
+//           <Link to={slide.link}>
+//             <SwiperSlide title={slide.title} text={slide.text} image={slide.image} />
+//           </Link>
+//         </MySwiperSlide>
+//       ))}
+//     </Swiper>
+//   );
+// }
+
+// export default SwiperComponent;
+

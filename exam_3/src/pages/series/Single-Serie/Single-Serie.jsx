@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 // styles
 import "../../../styles/pages/single-serie.scss";
 
+
 function SingleSeries() {
   const { id } = useParams();
   const [series, setSeries] = useState(null);
@@ -16,8 +17,11 @@ function SingleSeries() {
 
     const fetchData = async () => {
       try {
+        const REACT_APP_API_URL = "https://gateway.marvel.com:443/v1/public";
+        const REACT_APP_API_PUBLIC_KEY = "12bf5c0e3cdbe9b2e2dc09876922a9c0";
+
         const response = await axios.get(
-          `https://gateway.marvel.com:443/v1/public/series/${id}?apikey=12bf5c0e3cdbe9b2e2dc09876922a9c0`
+          `${REACT_APP_API_URL}/series/${id}?apikey=${REACT_APP_API_PUBLIC_KEY}`
         );
 
         if (

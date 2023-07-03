@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//components
+//pages
 import App from "./pages/App";
 
 //helpers
 import reportWebVitals from "./reportWebVitals";
 
-// assets
+// styles
 import "./styles/index.scss";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

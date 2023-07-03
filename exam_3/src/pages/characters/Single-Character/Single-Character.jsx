@@ -17,8 +17,11 @@ function SingleCharacter() {
 
     const fetchData = async () => {
       try {
+        const REACT_APP_API_URL = "https://gateway.marvel.com:443/v1/public";
+        const REACT_APP_API_PUBLIC_KEY = "12bf5c0e3cdbe9b2e2dc09876922a9c0";
+
         const response = await axios.get(
-          `https://gateway.marvel.com:443/v1/public/characters/${id}?apikey=12bf5c0e3cdbe9b2e2dc09876922a9c0`
+          `${REACT_APP_API_URL}/characters/${id}?apikey=${REACT_APP_API_PUBLIC_KEY}`
         );
         setCharacter(response.data.data.results[0]);
         setLoading(false);
