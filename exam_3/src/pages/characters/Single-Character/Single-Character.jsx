@@ -35,7 +35,9 @@ function SingleCharacter() {
   }, [id]);
 
   if (loading) {
-    return <Spin />;
+    return <div className="loader">
+      <Spin /> Loading...
+    </div>;
   }
 
   if (!character) {

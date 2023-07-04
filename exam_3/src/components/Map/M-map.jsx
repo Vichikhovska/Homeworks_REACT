@@ -4,6 +4,7 @@ import React from "react";
 import "../../styles/components/map/map.scss";
 import "../../styles/containers/section-map.scss";
 
+
 const MapComponent = () => {
   React.useEffect(() => {
     const cinemaUkraineCoordinates = { lat: 50.437675, lng: 30.516797 };

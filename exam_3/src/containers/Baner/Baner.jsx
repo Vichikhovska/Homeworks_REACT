@@ -1,5 +1,5 @@
 import React from "react";
-import SwiperComponent from "../../components/Swiper/";
+import SwiperComponent from "../../components/Swiper/Swiper";
 
 function Banner() {
   return (

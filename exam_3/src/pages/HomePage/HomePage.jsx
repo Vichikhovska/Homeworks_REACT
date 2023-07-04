@@ -8,6 +8,7 @@ import Movies from "../../containers/Series/Series";
 //styles
 import "../../styles/pages/home-page.scss";
 
+
 function HomePage() {
   return (
     <section className="mrvl-sections">

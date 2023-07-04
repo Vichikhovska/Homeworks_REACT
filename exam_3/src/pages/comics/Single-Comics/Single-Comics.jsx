@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 // styles
 import "../../../styles/pages/single-comics.scss";
 
+
 function SingleComics() {
   const { id } = useParams();
   const [comics, setComics] = useState(null);
@@ -40,7 +41,9 @@ function SingleComics() {
   }, [id]);
 
   if (loading) {
-    return <Spin />;
+    return <div className="loader">
+      <Spin /> Loading...
+    </div>;
   }
 
   if (!comics) {

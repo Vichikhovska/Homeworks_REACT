@@ -7,6 +7,7 @@ import Button from "../../components/Button/Button";
 //styles
 import "../../styles/containers/characters.scss";
 
+
 function Characters () {
   const navigate = useNavigate();
 

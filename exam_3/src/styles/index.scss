@@ -1,7 +1,8 @@
 @import "./null.scss";
 @import "./variables.scss";
 
+//responsive
 @import"./responsive/laptop-1024.scss";
 @import"./responsive/tablet-768.scss";
-// @import"./mobile-450.scss";
-// @import"./mobile-320.scss";
+@import"./responsive/mobile-450.scss";
+@import"./responsive/mobile-320.scss";

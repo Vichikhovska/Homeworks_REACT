@@ -11,6 +11,7 @@ import { HEADER_NAVIGATION_ICONS } from "./constants";
 //styles
 import "../../styles/containers/header.scss";
 
+
 function Header() {
   return (
     <header className="mrvl-header">

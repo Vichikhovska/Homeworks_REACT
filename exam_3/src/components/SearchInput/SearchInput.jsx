@@ -4,6 +4,7 @@ import { BiSearch } from "react-icons/bi";
 //styles
 import "../../styles/components/search-input/search-input.scss";
 
+
 function SearchInput() {
   const [isOpen, setIsOpen] = useState(false);
 

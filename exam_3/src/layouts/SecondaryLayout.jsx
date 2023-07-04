@@ -8,6 +8,7 @@ import SectionMap from "../containers/SectionMap";
 //styles
 import "../styles/layouts/secondary-layout.scss"
 
+
 function SecondaryLayout({children}) {
   return(
     <div className="mrvl-secondary-layout">

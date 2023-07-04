@@ -1,3 +1,14 @@
+.loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--base-color-light);
+}
+
 .mrvl-single-character-page {
   width: 100%;
   max-width: 1200px;
@@ -37,11 +48,6 @@
       font-weight: 700;
     }
 
-    &_list {
-
-      &_item {
-        list-style: inside;
-      }
-    }
+    &_list_item {list-style: inside;}
   }
 }

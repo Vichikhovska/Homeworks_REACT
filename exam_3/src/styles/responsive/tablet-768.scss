@@ -28,9 +28,7 @@
       &_button a {font-size: 12px;}
     }
 
-    &-image {
-      background-size: 130% 100%;
-    }
+    &-image {background-size: 130% 100%;}
   }
   //home page
   .mrvl-section-characters,
@@ -41,11 +39,9 @@
     justify-content: center;
     align-items: center;
 
-    &_parent {
-      margin: 0 auto;
-    }
+    &_parent {margin: 0 auto;}
   }
-
+  //footer
   .mrvl-footer_different_text { text-align: center; }
   .mrvl-footer_section_info_content  { font-size: 12px; }
   //characters, comics, series
@@ -77,6 +73,8 @@
   .mrvl-single-serie-page {
     flex-direction: column;
     gap: 20px;
+
+    &__content_title {font-size: 32px;}
 
     &__image { 
       width: 500px; 

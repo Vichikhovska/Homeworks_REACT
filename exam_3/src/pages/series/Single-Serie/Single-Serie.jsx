@@ -45,7 +45,9 @@ function SingleSeries() {
   }, [id]);
 
   if (loading) {
-    return <Spin />;
+    return <div className="loader">
+      <Spin /> Loading...
+    </div>;
   }
 
   if (!series) {
@@ -67,33 +69,36 @@ function SingleSeries() {
         <p className="mrvl-single-serie-page__content_subtitle">Rating: {rating}</p>
         <h3 className="mrvl-single-serie-page__content_subtitle">Comics:</h3>
         <ul className="mrvl-single-serie-page__content_list">
-          {comics.items.length > 0 ? (
-            comics.items.map((comic) => (
-              <li className="mrvl-single-serie-page__content_list_item" key={comic.resourceURI}>{comic.name}</li>
-            ))
-          ) : (
-            <li>No comics available.</li>
-          )}
+          {
+          comics.items.length > 0 
+            ? (comics.items.map((comic) => (
+                  <li className="mrvl-single-serie-page__content_list_item" key={comic.resourceURI}>{comic.name}</li>
+                ))
+              ) 
+            : (<li>No comics available.</li>)
+          }
         </ul>
         <h3 className="mrvl-single-serie-page__content_subtitle">Stories:</h3>
         <ul className="mrvl-single-serie-page__content_list">
-          {stories.items.length > 0 ? (
-            stories.items.map((story) => (
-              <li className="mrvl-single-serie-page__content_list_item" key={story.resourceURI}>{story.name}</li>
-            ))
-          ) : (
-            <li>No stories available.</li>
-          )}
+          {
+          stories.items.length > 0 
+            ? (stories.items.map((story) => (
+                  <li className="mrvl-single-serie-page__content_list_item" key={story.resourceURI}>{story.name}</li>
+                ))
+              ) 
+            : (<li>No stories available.</li>)
+          }
         </ul>
         <h3 className="mrvl-single-serie-page__content_subtitle">Events:</h3>
         <ul className="mrvl-single-serie-page__content_list">
-          {events.items.length > 0 ? (
-            events.items.map((event) => (
-              <li className="mrvl-single-serie-page__content_list_item" key={event.resourceURI}>{event.name}</li>
-            ))
-          ) : (
-            <li>No events available.</li>
-          )}
+          {
+          events.items.length > 0 
+            ? (events.items.map((event) => (
+                  <li className="mrvl-single-serie-page__content_list_item" key={event.resourceURI}>{event.name}</li>
+                ))
+              ) 
+            : (<li>No events available.</li>)
+          }
         </ul>
         {next && (
           <div className="mrvl-single-serie-page__next">

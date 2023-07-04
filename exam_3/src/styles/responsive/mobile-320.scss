@@ -1,0 +1,200 @@
+@media (min-width: 320px) and (max-width: 450px) {
+  //layouts
+  .mrvl-primary-layout,
+  .mrvl-secondary-layout,
+  .mrvl-simple-layout {
+    width: 100%;
+    max-width: 320px;
+  }
+  //header
+  .mrvl-header_logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .custom-input.open input[type="text"] {width: 40px;}
+
+  .mrvl-header_navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+  }
+  //swiper
+  .swiper {
+    width: 304px;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide { width: 320px; margin-right: 0;}
+
+  .slide {
+    width: 320px;
+    margin-right: 0;
+
+    &-content {
+      width: 100%;
+      padding: 8px;
+      gap: 10px;
+
+      &_title {font-size: 18px;}
+      &_text {font-size: 12px;}
+    }
+
+    &-image {display: none;}
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 8px !important;
+    width: 5px !important;
+    height: 5px !important;
+  }
+  //button
+  .mrvl-main-button {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .mrvl-main-button:hover { font-size: 16px; }
+  //home page
+  .mrvl-section-characters,
+  .mrvl-section-comics,
+  .mrvl-section-series {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+
+    &_parent {
+      width: 300px;
+      font-size: 12px;
+      line-height: 1;
+      margin: 0 auto;
+    }
+  }
+
+  .mrvl-section-characters_parent_description_text,
+  .mrvl-section-comics_parent_description_text,
+  .mrvl-section-series_parent_description_text { display: none; }
+
+  .mrvl-section-characters { background-size: 320% 100%; }
+  //footer
+  .mrvl-footer {
+    padding: 10px;
+
+    &_section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 8px;
+      margin-left: 12px;
+
+      &_info_content {font-size: 10px; line-height: revert;}
+    }
+  }
+
+  .mrvl-footer_different {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    text-align: center;
+  }
+  // cards on display
+  .mrvl-section-all-characters_ondisplay,
+  .mrvl-section-all-comics_ondisplay,
+  .mrvl-section-all-series_ondisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  //characters, comics, series
+  .mrvl-character-card,
+  .mrvl-comics-card,
+  .mrvl-series-card {
+    width: 250px;
+    height: 200px;
+  }
+
+  .mrvl-character-card__image img,
+  .mrvl-comics-card__image img,
+  .mrvl-series-card__image img {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 200px;
+  }
+
+  .mrvl-character-card__content,
+  .mrvl-comics-card__content,
+  .mrvl-series-card__content {
+    margin: 5px;
+    font-size: 14px;
+  }
+  //pagination
+  .mrvl-pagination {
+    gap: 5px;
+
+    &_current-page,
+    &_between,
+    &_total-pages { display: none; }
+  }
+  // single cards
+  .mrvl-single-character-page,
+  .mrvl-single-comics-page,
+  .mrvl-single-serie-page {
+    flex-direction: column;
+    gap: 10px;
+
+    &__content {
+      
+      &_text {font-size: 12px;}
+      &_title {font-size: 16px;}
+      &_subtitle, &_list_item {font-size: 14px;}
+    }
+
+    &__image { 
+      width: 280px; 
+      height: 200px; 
+    
+      img {
+        width: 280px; 
+        height: 200px;
+      }
+    }
+  }
+  //map
+  #map {
+    height: 280px;
+    width: 100%;
+  }
+
+  .mrvl_map {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &_content {
+      height: max-content;
+      width: 100%;
+      gap: 8px;
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 1;
+    }
+  }
+  //authorization
+  .mrvl-forms {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mrvl-form-login,
+  .mrvl-form-singup {
+    padding: 12px;
+    height: max-content;
+  }
+  ::placeholder {color: var(--base-color-light);}
+}

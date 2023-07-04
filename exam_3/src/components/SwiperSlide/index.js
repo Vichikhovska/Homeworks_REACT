@@ -1,3 +1,3 @@
-import MySwiperSlide from "./SwiperSlide";
+// import MySwiperSlide from "./SwiperSlide";
 
-export default MySwiperSlide;
+// export default MySwiperSlide;

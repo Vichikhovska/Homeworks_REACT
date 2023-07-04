@@ -1,0 +1,153 @@
+@media (min-width: 450px) and (max-width: 768px) {
+  //layouts
+  .mrvl-primary-layout,
+  .mrvl-secondary-layout,
+  .mrvl-simple-layout {
+    width: 100%;
+    max-width: 450px;
+  }
+  //header
+  .custom-input.open input[type="text"] {width: 40px;}
+
+  .mrvl-header_navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+  }
+  //swiper
+  .swiper {
+    width: 434px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide { width: 450px; margin-right: 0;}
+
+  .slide {
+    width: 450px;
+    margin-right: 0;
+
+    &-content {
+      width: 100%;
+      padding: 12px;
+      gap: 18px;
+
+      &_title {font-size: 22px;}
+      &_text {font-size: 14px;}
+    }
+
+    &-image {display: none;}
+  }
+  //home page
+  .mrvl-section-characters,
+  .mrvl-section-comics,
+  .mrvl-section-series {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_parent {
+      width: 380px;
+      font-size: 12px;
+      line-height: 1;
+      margin: 0 auto;
+    }
+  }
+
+  .mrvl-section-characters { background-size: 320% 100%; }
+  //footer
+  .mrvl-footer_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    margin-left: 30px;
+  }
+
+  .mrvl-footer_different {gap: 8px;}
+  // cards on display
+  .mrvl-section-all-characters_ondisplay,
+  .mrvl-section-all-comics_ondisplay,
+  .mrvl-section-all-series_ondisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  //characters, comics, series
+  .mrvl-character-card,
+  .mrvl-comics-card,
+  .mrvl-series-card {
+    width: 370px;
+    height: 280px;
+  }
+
+  .mrvl-character-card__image img,
+  .mrvl-comics-card__image img,
+  .mrvl-series-card__image img {
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 280px;
+  }
+
+  .mrvl-character-card__content,
+  .mrvl-comics-card__content,
+  .mrvl-series-card__content {
+    margin: 7px;
+    font-size: 16px;
+  }
+  // single cards
+  .mrvl-single-character-page,
+  .mrvl-single-comics-page,
+  .mrvl-single-serie-page {
+    flex-direction: column;
+    gap: 12px;
+
+    &__content {
+      
+      &_text {font-size: 16px;}
+      &_title {font-size: 24px;}
+      &_subtitle {font-size: 20px;}
+    }
+
+    &__image { 
+      width: 380px; 
+      height: 300px; 
+    
+      img {
+        width: 380px; 
+        height: 300px;
+      }
+    }
+  }
+  //map
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+
+  .mrvl_map {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &_content {
+      height: max-content;
+      width: 100%;
+      gap: 8px;
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 1;
+    }
+  }
+  //authorization
+  .mrvl-forms {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  ::placeholder {color: var(--base-color-light);}
+}

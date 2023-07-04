@@ -8,6 +8,7 @@ import panteraImage from "../../assets/img/pantera.jpg";
 import torImage from "../../assets/img/tor.png";
 import gamoraImage from "../../assets/img/gamora.jpg";
 
+
 const images = {
   groot: grootImage,
   halk: halkImage,

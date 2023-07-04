@@ -8,6 +8,7 @@ import Button from "../Button";
 import "../../styles/components/pagination/pagination.scss";
 import "../../styles/components/button/pagination-button.scss";
 
+
 function Pagination({ currentPage, totalPages, goToPreviousPage, goToNextPage }) {
   return (
     <div className="mrvl-pagination">
