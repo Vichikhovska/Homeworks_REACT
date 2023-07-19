@@ -3,7 +3,7 @@ import { Spin } from "antd";
 import PropTypes from "prop-types";
 
 //api
-import GetAllCharacters from "../../../api/All-Characters";
+import GetAllCharacters from "../../../api/allCharacters";
 
 //pages
 import CharacterCard from "../CharacterCard/CharacterCard";

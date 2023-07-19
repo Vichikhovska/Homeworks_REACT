@@ -34,6 +34,14 @@
     }
   }
 
+  &_span {
+    text-align: end;
+    color: var(--base-color-light);
+    font-family: var(--font-family);
+    font-size: 10px;
+    font-weight: 100;
+  }
+
   &_navigation {
     display: flex;
     align-items: center;

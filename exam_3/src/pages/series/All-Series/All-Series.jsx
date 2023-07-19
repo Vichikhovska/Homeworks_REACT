@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Pagination from "../../../components/Pagination";
 
 //api
-import GetAllSeries from "../../../api/All-Series";
+import GetAllSeries from "../../../api/allSeries";
 
 //pages
 import SeriesCard from "../SeriesCard/SeriesCard";

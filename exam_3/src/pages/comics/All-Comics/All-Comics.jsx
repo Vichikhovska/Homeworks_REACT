@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Pagination from "../../../components/Pagination";
 
 //api
-import GetAllComics from "../../../api/All-Comics";
+import GetAllComics from "../../../api/allComics";
 
 //pages
 import ComicsCard from "../ComicsCard/ComicsCard";

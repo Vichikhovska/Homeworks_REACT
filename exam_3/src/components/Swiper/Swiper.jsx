@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../Button/Button";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
+import MySwiperSlide from "../SwiperSlide/SwiperSlide"
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 
 //constants
@@ -34,84 +34,68 @@ function SwiperComponent() {
       speed={2000}
     >
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-content">
-            <h2 className="slide-content_title">Why Groot's Line at the End of 'Guardians of the Galaxy Vol. 3' Matters</h2>
-            <p className="slide-content_text">And more importantly, why could we understand it?</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.groot})` }}></div>
-        </div>
+        <MySwiperSlide 
+          image = {images.groot}
+          title = "Why Groot's Line at the End of 'Guardians of the Galaxy Vol. 3' Matters"
+          text = "And more importantly, why could we understand it?"
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.halk})` }}></div>
-          <div className="slide-content">
-            <h2 className="slide-content_title">Hulk's Incredible Strength Shatters Records</h2>
-            <p className="slide-content_text">Witness the astonishing power of the Hulk as he smashes through box office records and leaves audiences in awe.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-        </div>
+        <MySwiperSlide 
+          image = {images.halk}
+          title = "Hulk's Incredible Strength Shatters Records"
+          text = "Witness the astonishing power of the Hulk as he smashes through box office records and leaves audiences in awe."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-content">
-            <h2 className="slide-content_title">Black Widow: A Heroine's Journey</h2>
-            <p className="slide-content_text">Explore the captivating story of Black Widow as she navigates a world of espionage, redemption, and sacrifice.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.blackWidow})` }}></div>
-        </div>
+        <MySwiperSlide 
+          image = {images.blackWidow}
+          title = "Black Widow: A Heroine's Journey"
+          text = "Explore the captivating story of Black Widow as she navigates a world of espionage, redemption, and sacrifice."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.cap})` }}></div>
-          <div className="slide-content">
-            <h2 className="slide-content_title">Captain America: The Symbol of Freedom</h2>
-            <p className="slide-content_text">Discover the unwavering courage and unwavering spirit of Captain America as he fights for justice and defends the values of liberty.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-        </div>
+        <MySwiperSlide 
+          image = {images.cap}
+          title = "Captain America: The Symbol of Freedom"
+          text = "Discover the unwavering courage and unwavering spirit of Captain America as he fights for justice and defends the values of liberty."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-content">
-            <h2 className="slide-content_title">Iron Man's Technological Marvels</h2>
-            <p className="slide-content_text">Step into the world of Iron Man and marvel at the cutting-edge technology that powers his armored suit and fuels his heroism.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.ironMan})` }}></div>
-        </div>
+        <MySwiperSlide 
+          image = {images.ironMan}
+          title = "Iron Man's Technological Marvels"
+          text = "Step into the world of Iron Man and marvel at the cutting-edge technology that powers his armored suit and fuels his heroism."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.pantera})` }}></div>
-          <div className="slide-content">
-            <h2 className="slide-content_title">Black Panther: Wakanda Forever</h2>
-            <p className="slide-content_text">Explore the rich and vibrant world of Wakanda as Black Panther takes on the mantle of the protector and defends his nation from threats.</p>
-            <Button className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-        </div>
+        <MySwiperSlide 
+          image = {images.pantera}
+          title = "Black Panther: Wakanda Forever"
+          text = "Explore the rich and vibrant world of Wakanda as Black Panther takes on the mantle of the protector and defends his nation from threats."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-content">
-            <h2 className="slide-content_title">Thor: God of Thunder, Protector of Realms</h2>
-            <p className="slide-content_text">Join Thor on his epic quest to safeguard the Nine Realms and discover the true meaning of heroism and sacrifice.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.tor})` }}></div>
-        </div>
+        <MySwiperSlide 
+          image = {images.tor}
+          title = "Thor: God of Thunder, Protector of Realms"
+          text = "Join Thor on his epic quest to safeguard the Nine Realms and discover the true meaning of heroism and sacrifice."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="slide">
-          <div className="slide-image" style={{ backgroundImage: `linear-gradient(to right, #000000, #434343), url(${images.gamora})` }}></div>
-          <div className="slide-content">
-            <h2 className="slide-content_title">Gamora: The Deadliest Woman in the Galaxy</h2>
-            <p className="slide-content_text">Uncover the enigmatic past and formidable skills of Gamora as she navigates a treacherous universe filled with danger and deception.</p>
-            <Button  className="mrvl-main-button" text="Learn more" onClick={handleClick} />
-          </div>
-        </div>
+        <MySwiperSlide 
+          image = {images.gamora}
+          title = "Gamora: The Deadliest Woman in the Galaxy"
+          text = "Uncover the enigmatic past and formidable skills of Gamora as she navigates a treacherous universe filled with danger and deception."
+          handleClick = {handleClick}>
+        </MySwiperSlide>
       </SwiperSlide>
     </Swiper>
   );

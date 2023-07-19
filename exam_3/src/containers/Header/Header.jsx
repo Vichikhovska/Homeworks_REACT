@@ -31,6 +31,7 @@ function Header() {
         ))}
       </div>
     </div>
+    <span className="mrvl-header_span">*searches for a series by the begginning of the title</span>
     <nav className="mrvl-header_navigation">
       {HEADER_NAVIGATION_LINKS.map((link, index) => (
         <Link key={`${index}-${link.label}`} to={link.value} className="mrvl-header_navigation_text">
