@@ -3,6 +3,7 @@ import React from "react";
 //styles
 import "../../styles/components/search-modal/search-results-modal.scss"
 
+
 function SearchResultsModal({ isOpen, setIsOpen, searchResults }) {
   const closeModal = () => {
     setIsOpen(false);
